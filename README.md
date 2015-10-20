@@ -10,7 +10,6 @@ This prefab is broken down into multiple documents.
  - [Application Description][]
  - [Meetings and Process][]
  - [CD Pipeline][]
- - [TODO items for this prefab][]
 
 # Getting started
 
@@ -22,6 +21,8 @@ If there are steps missing or things that could be improved, please open an issu
 
 # How to contribute back?
 
+There is a list of [TODO items][]. If you want to help find something from there and have a crack.
+
 Fork and open a pull request or alternatively email a patch and description to [rgrasso@thoughtworks.com](mailto:rgrasso@thoughtworks.com).
 
 
@@ -29,4 +30,4 @@ Fork and open a pull request or alternatively email a patch and description to [
 [Application Description]:       docs/application-description.md
 [Meetings and Process]:          docs/meetings-and-process.md
 [CD Pipeline]:                   docs/cd-pipeline.md
-[TODO items for this prefab]:    docs/todo.md
+[TODO items]:    TODO.md
