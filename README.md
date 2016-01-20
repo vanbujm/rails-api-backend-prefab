@@ -14,20 +14,21 @@ You need an authenticated admin UI to manage the content and data served by the 
 
 # Technical Approach
 
-| Responsibility        | Chosen Solution          |
-| --------------------- | ------------------------ |
-| HTTP Stack            | Rails                    |
-| Database              | Postgres                 |
-| ORM                   | Active Record            |
-| DB Migrations         | Active Record Migrations |
-| Unit Testing          | RSpec                    |
-| Stubbing and spying   | RSpec Mocks              |
-| Monitoring            | New Relic                |
-| Logging               | Papertrail               |
-| Background Jobs       | Sidekiq on Redis         |
-| CI                    | SnapCI                   |
-| Hosting               | Heroku                   |
-| Persistent file store | Amazon S3                |
+| Responsibility          | Chosen Solution          |
+| ----------------------- | ------------------------ |
+| HTTP Stack              | Rails                    |
+| Database                | Postgres                 |
+| ORM                     | Active Record            |
+| DB Migrations           | Active Record Migrations |
+| Unit Testing            | RSpec                    |
+| Stubbing and spying     | RSpec Mocks              |
+| Monitoring              | New Relic                |
+| Logging                 | Papertrail               |
+| Background Jobs         | Sidekiq on Redis         |
+| CI                      | SnapCI                   |
+| Hosting                 | Heroku                   |
+| Persistent file store   | Amazon S3                |
+| Development Environment | Vagrant                  |
 
 # More Information
 
