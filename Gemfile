@@ -7,20 +7,41 @@ gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
 gem 'puma'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# Admin
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
+gem 'ckeditor'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
+# Http client
+gem 'faraday'
+gem 'faraday_middleware'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# API
+gem 'virtus'
+gem 'active_model_serializers'
+gem 'rack-cors'
+
+# Caching
+gem 'actionpack-action_caching'
+gem 'memcachier'
+gem 'dalli'
+
+# Heroku hosting
+gem 'rails_12factor', group: :production
+gem 'newrelic_rpm', group: :production
+
+# Background jobs
+gem 'sidekiq'
+gem 'sidekiq-cron'
+gem 'sidekiq-history'
+gem 'sidekiq-statistic'
+gem 'sidekiq-unique-jobs'
+gem 'sinatra', :require => nil
 
 group :development, :test do
   gem 'pry-byebug'
@@ -32,7 +53,6 @@ group :development, :test do
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
   gem 'guard-rspec', require: false
