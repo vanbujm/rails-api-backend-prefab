@@ -25,10 +25,18 @@ gem 'puma'
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
+
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 3.0'
+  gem 'factory_girl_rails'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  gem 'guard-rspec', require: false
+  gem 'guard-rails', require: false
+  gem 'guard-process', require: false
 end
 
