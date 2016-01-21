@@ -1,0 +1,5 @@
+Sync events every five minutes:
+  cron: "*/5 * * * *"
+  class: "SyncEventsWorker"
+  queue: default
+
