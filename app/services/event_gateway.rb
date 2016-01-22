@@ -1,5 +1,6 @@
 class EventGateway
   def all
-    raise NotImplementedException
+    # TODO You could use Faraday to fetch data from a HTTP endpoint here
+    []
   end
 end
