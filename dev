@@ -3,4 +3,4 @@
 set -e
 
 # Just fire up the app guard tasks thanks
-guard -g app
+bundle exec guard -g app
