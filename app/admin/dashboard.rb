@@ -13,8 +13,8 @@ ActiveAdmin.register_page "Dashboard" do
     columns do
       column do
         panel "What is this?" do
-          para "This is the back end to the Spacecubed mobile application."
-          para "It caches data from Nexudus and serves up a JSON API that the apps consume."
+          para "This is the Rails Backend API Prefab."
+          para "It serves as a simple example of a Rails app bundled with the learnings of various applications built by the Perth ThoughtWorks team and friends."
         end
       end
       column do
