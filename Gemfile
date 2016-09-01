@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'rails', '4.2.4'
+gem 'rails', '~> 4.0'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -12,8 +12,15 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'puma'
 
+# Security
+group :development do
+  gem 'brakeman', require: false
+  gem 'bundler-audit', require: false
+  gem 'rubocop', require: false
+end
+
 # Admin
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', '= 1.0.0.pre4'
 gem 'devise'
 gem 'ckeditor'
 
@@ -59,4 +66,3 @@ group :development do
   gem 'guard-rails', require: false
   gem 'guard-process', require: false
 end
-
