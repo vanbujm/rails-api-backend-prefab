@@ -1,6 +1,15 @@
 class EventGateway
+  def self.build
+    new Rails.logger
+  end
+
+  def initialize(logger)
+    @logger = logger
+  end
+
   def all
-    # TODO You could use Faraday to fetch data from a HTTP endpoint here
+    @logger.info "Getting all the events"
+
     []
   end
 end
