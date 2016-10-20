@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161019031843) do
+ActiveRecord::Schema.define(version: 20161019082044) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,8 +40,12 @@ ActiveRecord::Schema.define(version: 20161019031843) do
     t.string   "name"
     t.datetime "creationDate"
     t.integer  "copies"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "submission_file_name"
+    t.string   "submission_content_type"
+    t.integer  "submission_file_size"
+    t.datetime "submission_updated_at"
   end
 
   create_table "events", force: :cascade do |t|
