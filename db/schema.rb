@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161019082044) do
+ActiveRecord::Schema.define(version: 20161122093509) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,21 @@ ActiveRecord::Schema.define(version: 20161019082044) do
     t.string   "submission_content_type"
     t.integer  "submission_file_size"
     t.datetime "submission_updated_at"
+  end
+
+  create_table "dog_names", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "dog_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dogs", force: :cascade do |t|
+    t.string   "breed"
+    t.integer  "age"
+    t.integer  "catalog_item_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "events", force: :cascade do |t|
