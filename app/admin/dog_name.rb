@@ -14,9 +14,7 @@ permit_params :name
 # end
 
 index do
-  column "Name" do |dog_name|
-    dog_name.name.titlecase
-  end
+  column :name
   column :updated_at
   column :created_at
   actions

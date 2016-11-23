@@ -16,7 +16,7 @@ ActiveAdmin.register Dog do
                allow_destroy: true do |dog_dog_name|
       dog_dog_name.input :dog_name_id,
                          as: :select,
-                         collection: DogName.all.map{|dog_name| [dog_name.name.titlecase, dog_name.id]}.uniq,
+                         collection: DogName.all.map{|dog_name| [dog_name.name, dog_name.id]}.uniq,
                          include_blank: false
       dog_dog_name.actions
     end
@@ -30,7 +30,7 @@ ActiveAdmin.register Dog do
 
       table_for dog.dog_names do
         column "Names" do |dog_name|
-          dog_name.name.titlecase
+          dog_name.name
         end
       end
     end
@@ -40,7 +40,7 @@ ActiveAdmin.register Dog do
     column :breed
     column :age
     column "Names" do |dog|
-      dog.dog_names.map(&:name).join(", ").titlecase
+      dog.dog_names.map(&:name).join(", ")
     end
     column :created_at
     column :updated_at
